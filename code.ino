@@ -22,8 +22,8 @@ int main(void)
 //Remove USB CDC feature
 /*
 #if defined(SERIAL_CDC)
- // PluggableUSBD().begin();
-  //SerialUSB.begin(115200);
+  PluggableUSBD().begin();
+  SerialUSB.begin(115200);
  #endif
 */
   setup();
