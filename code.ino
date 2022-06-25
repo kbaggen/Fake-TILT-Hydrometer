@@ -12,7 +12,7 @@ MaximWire::DS18B20 device;
 */
 
 //disable USB connection for lower power consumptions....hence, no usb serial unless uncomments
-/*
+
 
 int main(void)
 {
@@ -20,11 +20,12 @@ int main(void)
   initVariant();
 
 //Remove USB CDC feature
-//#if defined(SERIAL_CDC)
-//  PluggableUSBD().begin();
-//  SerialUSB.begin(115200);
-//#endif
-
+/*
+#if defined(SERIAL_CDC)
+ // PluggableUSBD().begin();
+  //SerialUSB.begin(115200);
+ #endif
+*/
   setup();
 
   for (;;) {
@@ -34,7 +35,7 @@ int main(void)
 
   return 0;
 }
-*/
+
 
 
 //statements
